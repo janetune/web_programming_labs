@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!-- Сторінка реєстрація має містити наступні елементи:
+елемент введення електронної пошти, елемент введення login
+елемент введення password, елемент для підтвердження password 
+кнопка зареєструватися, кнопка очистити форму -->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Реєстрація </title>
+</head>
+
+<body>
+
+<header>
+    <h1 style="text-align: center"> math.for.all </h1>
+    <nav style="text-align: center">
+        <a href="lab1_main.html"> Головна </a> |
+        <a href="lab1_login.html"> Вхід </a> |
+        <a href="lab1_signup.html"> Реєстрація </a> |
+        <a href="lab1_contact.html"> Зворотній зв'язок </a>
+    </nav>
+</header>
+
+<main>
+<form style = "text-align: center" method = "post">  
+    <br>   
+    <label for = "email"> Електронна пошта </label>
+    <input type = "email" id = "user_email" name = "email"> <br> <br>
+    <label for = "login"> Логін </label>
+    <input type = "text" id = "login" name = "login"> <br> <br>
+    <label for = "password"> Пароль </label>
+    <input type = "password" id = "password" name = "password"> <br> <br>
+    <label for = "password"> Підтвердження пароля </label>
+    <input type = "password" id = "password_check" name = "password_check"> <br> <br>
+    <input type = "submit" value = "Зареєструватись">
+    <input type = "reset" value = "Очистити форму">
+</form>
+</main>
+
+<footer style="text-align: center">
+    <p>© 2026 math.for.all | Навчальний проєкт</p>
+</footer>
+
+</body>

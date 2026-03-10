@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<!-- Сторінка зворотній зв’язок має містити наступні елементи:
+елемент для введення ім’я, елемент для введення прізвища, елемент для електронної пошти
+елемент для введення номера телефону, елемент для введення тексту повідомлення
+елемент для вибору зворотного зв’язку (телефон або електронна пошта). Вибір здійснюється за допомогою елементів radio button
+елемент для вибору типу повідомлення (питання, побажання, скарга…). Вибір здійснюється за допомогою елементу select.
+елемент що надає можливість додати файл з зображенням до повідомлення, кнопку відправити -->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> Зворотній зв'язок </title>
+</head>
+
+<body>
+
+<header>
+    <h1 style="text-align: center"> math.for.all </h1>
+    <nav style="text-align: center">
+        <a href="lab1_main.html"> Головна </a> |
+        <a href="lab1_login.html"> Вхід</a> |
+        <a href="lab1_signup.html"> Реєстрація </a> |
+        <a href="#"> Зворотній зв'язок </a>
+    </nav>
+</header>
+
+<main>
+<form style = "text-align: center" method = "post">  
+    <br>   
+    <h3> Заповніть форму для зворотнього зв'язку: </h3>
+
+    <label for = "firstname_user"> Ім'я </label>
+    <input type = "text" id = "firstname_user" name = "firstname"> <br> <br>
+
+    <label for = "lastname_user"> Прізвище </label>
+    <input type = "text" id = "lastname_user" name = "lastname"> <br> <br>
+
+    <label for = "user_email"> Електронна пошта </label>
+    <input type = "email" id = "user_email" name = "email"> <br> <br>
+
+    <label for = "phonenumber_user"> Номер телефону </label>
+    <input type = "tel" id = "phonenumber_user" placeholder = "380-11-111-1111" 
+     pattern = "380-[0-9]{2}-[0-9]{3}-[0-9]{4}" name = "phonenumber"> <br> <br>
+
+    <p> Ваше повідомлення: </p>
+    <textarea name = "issue_text" rows = "10" cols ="30"> </textarea> <br> <br>
+
+    <label for = "issue_type"> Ваш тип повідомлення: </label>
+    <select id = "issue_type" name = "type">
+        <option value = "complaint"> Скарга </option>
+        <option value = "suggestion"> Побажання </option>
+        <option value = "question"> Питання </option>
+    </select> <br> <br>
+
+    <label for = "user_file"> Додаток: </label>
+    <input type = "file" id = "user_file" name = "file"> <br> <br> <br>
+
+    <input type = "submit" value = "Надіслати">
+    <input type = "reset" value = "Очистити форму">
+</form>
+</main>
+
+<footer style="text-align: center">
+    <p>© 2026 math.for.all | Навчальний проєкт</p>
+</footer>
+
+</body>
