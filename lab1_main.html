@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<!-- Створити HTML сторінку на довільну тему.  
+Сторінка повинна містити 4-5 статтей. Статті повинні містити заголовок, зображення, текст та гіперпосилання. 
+Також сторінка повинна містити список статей та навігацію по сайту (інші сторінки на сайті будуть додані у наступній лабораторній).
+При створенні сторінки використати семантичні елементи: <header>, <footer>, <nav>, <main>, <aside> та <article>. -->
+
+<!-- Доповнити сайт наступними сторінками: вхід, реєстрація, зворотній зв’язок. 
+Нові сторінки, а також головна сторінка, мають бути елементами навігаційної панелі. 
+Навігаційна панель має бути доступною на кожній сторінці сайту.  -->
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Математика - галузі</title>
+</head>
+
+<body>
+
+<header>
+    <h1 style="text-align: center"> math.for.all </h1>
+    <nav style="text-align: center">
+        <a href="#">Головна</a> |
+        <a href="#">Вхід</a> |
+        <a href="#">Реєстрація</a> |
+        <a href="#">Про нас</a> |
+        <a href="#">Зворотній зв'язок</a>
+    </nav>
+</header>
+
+<main>
+    <h2 style="text-align: center"> Основні галузі математики </h2>
+
+    <table width="100%">
+        <tr>
+            <td width="25%" valign="top">
+                <aside>
+                    <h3>Список статей:</h3>
+                    <ol>
+                        <li><a href="#arithmetics">Арифметика</a></li>
+                        <li><a href="#algebra">Алгебра</a></li>
+                        <li><a href="#analysis">Математичний аналіз</a></li>
+                        <li><a href="#combinatorics">Комбінаторика</a></li>
+                        <li><a href="#geometry">Геометрія</a></li>
+                    </ol>
+                </aside>
+            </td>
+
+            <td width="75%" valign="top">
+
+                <article id="arithmetics">
+                    <h3>1. <a href="https://uk.wikipedia.org/wiki/Арифметика">Арифметика</a></h3>
+                    <p>
+                        Арифметика — це розділ математики, що вивчає числа та дії над ними.
+                        Основними діями є додавання, віднімання, множення та ділення.
+                    </p>
+                    <img src = "https://magoosh.com/gmat/files/2020/07/image-gmat-header-arithmetic.jpg" width = 60%>
+                </article>
+
+                <article id="algebra">
+                    <h3>2. <a href="https://uk.wikipedia.org/wiki/Алгебра">Алгебра</a></h3>
+                    <p>
+                        Алгебра вивчає математичні операції і відношення,
+                        многочлени, алгебраїчні рівняння та структури.
+                    </p>
+                    <img src = "https://www.science.edu/acellus/wp-content/uploads/2017/01/Algebra-2-712x388-712x388.jpg" width = 60%>
+                </article>
+
+                <article id="analysis">
+                    <h3>3. <a href="https://uk.wikipedia.org/wiki/Математичний_аналіз">
+                        Математичний аналіз</a></h3>
+                    <p>
+                        Галузь математики, що вивчає функції, границі,
+                        похідні та інтеграли.
+                    </p>
+                    <img src = "https://thebrightsideofmathematics.com/images/thumbs/ra01.png" width = 60%>
+                </article>
+
+                <article id="combinatorics">
+                    <h3>4. <a href="https://uk.wikipedia.org/wiki/Комбінаторика">
+                        Комбінаторика</a></h3>
+                    <p>
+                        Наука про підрахунок комбінацій та розміщень елементів.
+                    </p>
+                    <img src = "https://www.mooc-list.com/img/node-2260.jpg" width = 60%>
+                </article>
+
+                <article id="geometry">
+                    <h3>5. <a href="https://uk.wikipedia.org/wiki/Геометрія"> Геометрія</a></h3>
+                    <p>
+                        Геометрія вивчає просторові форми,
+                        їх властивості та взаємне розташування.
+                    </p>
+                    <img src = "https://miro.medium.com/v2/resize:fit:640/format:webp/1*kYb-zGbyK2J4rmda-qAD2w.jpeg" width = 60%>
+                </article>
+
+            </td>
+        </tr>
+    </table>
+
+</main>
+
+
+<footer style="text-align: center">
+    <p>© 2026 math.for.all | Навчальний проєкт</p>
+</footer>
+
+</body>
+</html>
